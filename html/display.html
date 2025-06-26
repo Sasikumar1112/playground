@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+</head>
+<body>
+    <div id="inblelements">
+        <span style="padding: 2px;">In line</span>
+        <span style="padding: 2px;"> In line long content laksnfalf as alksnf</span>
+        <br>
+        <div style="padding: 2px;">Block</div>
+        <br>
+        <div style="padding: 2px;">Block long laksnfalf as alksnf</div>
+        <br>
+        <div style="display: flex;">
+            Flexbox 
+            <span style="padding: 2px;">inline1</span>
+            <span style="padding: 2px;">inline2</span>
+            <div style="padding: 2px;">block1</div>
+            <div style="padding: 2px;">block2</div>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Cat" style="margin: 5px;color: #ed657d;">This is an anchor with default(_self) open </a>
+        <link href="https://en.wikipedia.org/wiki/Cat" style="margin: 5px;color: #ed657d;">This is a link, won't add any style for this</link>
+        <br>
+        <span>both anchor and link are inline elms</span>
+        <br>
+    </div>
+    <div id="anchors" style="display: none;">
+        Target use iframe :
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">_blank</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Cat" target="_self">_self</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Cat" target="_parent">_parent -> loads in parent window</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Cat" target="_top">_top -> loads on top most parent window</a></li>
+        </ul>
+    </div>
+    <br>
+    <div>IFRAME:</div>
+    <iframe src="display.html?showanchor=true" width="600" height="400"></iframe>
+    <script>
+        var params = new URLSearchParams(window.location.search);
+        if(params.get('showanchor')) {
+            document.getElementById('anchors').style.display = 'block';
+            document.getElementById('inblelements').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
