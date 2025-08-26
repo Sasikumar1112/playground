@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "zuko";
+    src: 
+        url(../font/rillosta-font/Rillosta-LVLmW.otf) format("opentype"),
+        url(../font/rillosta-font/Rillosta-XGYd9.ttf) format("truetype");
+    ;
+}
+
+.test{
+    font-family: "zuko";
+}
