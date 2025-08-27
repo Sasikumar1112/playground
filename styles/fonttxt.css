@@ -1,11 +1,18 @@
 @font-face {
-    font-family: "zuko";
+    font-family: "rillosta";
     src: 
         url(../font/rillosta-font/Rillosta-LVLmW.otf) format("opentype"),
         url(../font/rillosta-font/Rillosta-XGYd9.ttf) format("truetype");
     ;
 }
-
-.test{
-    font-family: "zuko";
+.rillo{
+    font-family: "rillosta";
+}
+@font-face {
+    font-family: "star";
+    src: url(../font/icons/icomoon.woff) format("opentype");
+}
+.star:before {
+    font-family: "star";
+    content: "\e901";
 }

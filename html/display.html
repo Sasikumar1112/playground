@@ -4,29 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Elements</title>
-    <link rel="stylesheets" href="./../styles/fonttxt.css">
 </head>
 <body>
-    <style>
-        @font-face {
-            font-family: "zuko";
-            src: 
-                url(../font/rillosta-font/Rillosta-LVLmW.otf) format("opentype"),
-                url(../font/rillosta-font/Rillosta-XGYd9.ttf) format("truetype");
-            ;
-        }
-        .test{
-            font-family: "zuko";
-        }
-        @font-face {
-            font-family: "aang";
-            src: url(../font/icons/icomoon.woff) format("opentype");
-        }
-        .icond:before {
-            font-family: "aang";
-            content: "\e901";
-        }
-    </style>
     <div id="inblelements">
         <span style="padding: 2px;" class="test">In line</span>
         <span style="padding: 2px;"> In line long content laksnfalf as alksnf</span>
@@ -59,15 +38,14 @@
         </ul>
     </div>
     <br>
-    <div class="icond"></div>
     <div>IFRAME:</div>
-    <!-- <iframe src="display.html?showanchor=true" width="600" height="400"></iframe> -->
-    <!-- <script>
+    <iframe src="display.html?showanchor=true" width="600" height="400"></iframe>
+    <script>
         var params = new URLSearchParams(window.location.search);
         if(params.get('showanchor')) {
             document.getElementById('anchors').style.display = 'block';
             document.getElementById('inblelements').style.display = 'none';
         }
-    </script> -->
+    </script>
 </body>
 </html>
