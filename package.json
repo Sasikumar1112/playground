@@ -2,11 +2,13 @@
   "name": "playground",
   "version": "1.0.0",
   "description": "Just have playground for my learning. Not going to help you # serving htmls 1) using python ```py     python3 -m http.server 8000 ```",
-  "main": "index.js",
+  "main": "main.js",
   "directories": {
     "test": "test"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "electron ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sasikumar1112/playground.git"
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/Sasikumar1112/playground#readme",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.0"
+    "@types/node": "^24.3.0",
+    "electron": "^38.2.1"
   }
 }
